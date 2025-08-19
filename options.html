@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart AutoFill Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <h1>Define Autofill Rules</h1>
+
+  <form id="ruleForm">
+    <input type="text" id="match" placeholder="Field contains..." required>
+    <input type="text" id="value" placeholder="Fill with..." required>
+    <button type="submit">Add Rule</button>
+  </form>
+
+  <div style="margin-top: 20px;">
+    <button id="exportBtn">Export Rules</button>
+    <button id="importBtn">Import Rules</button>
+    <input type="file" id="fileInput" accept=".json" style="display:none">
+  </div>
+
+  <ul id="rulesList"></ul>
+
+  <script src="options.js"></script>
+</body>
+</html>
